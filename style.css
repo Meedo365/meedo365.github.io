@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.centre {
+    margin: 0 auto;
+    height: 100%;
+    background-image: url('./bg1.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    height: 100vh;
+    background-color: rgba(251, 213, 174, 1);
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile h1 {
+    text-transform: uppercase;
+    margin: 10px auto;
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.profile h1:hover {
+    color: white;
+    ;
+}
+
+.profile h4 {
+    text-align: center;
+    line-height: 30px;
+    margin: auto 100px;
+}
+
+.socials {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin: 25px auto;
+}
+
+.socials img {
+    background-color: white;
+    width: 150px;
+    height: 65px;
+    border-radius: 8px;
+    transition: all 1.5s ease;
+}
+
+.socials img:hover {
+    transform: scale(1.1);
+}
+
+.info {
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+
+}
+
+.info button {
+    background-color: rgb(244, 166, 91);
+    outline: none;
+    color: black;
+    text-transform: capitalize;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 3s ease;
+}
+
+.info button:hover {
+    background-color: rgb(123, 86, 51);
+    color: white;
+}
+
+.centered-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('./404.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.centered-div h1,
+.centered-div a,
+.centered-div p {
+    padding: 20px 0px;
+    color: black;
+}
+
+.centered-div input {
+    width: 50%;
+    padding: 20px;
+}
+
+@media (max-width:768px) {
+    .container {
+        height: 100%;
+    }
+}
