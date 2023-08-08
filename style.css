@@ -109,14 +109,21 @@
     height: 100vh;
     background-image: url('./404.png');
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 }
 
 .centered-div h1,
+.centered-div h2,
 .centered-div a,
 .centered-div p {
     padding: 20px 0px;
+    color: rgb(123, 86, 51);
+}
+
+.centered-div a:hover {
     color: black;
+    background-color: white;
+    padding: 5px;
 }
 
 .centered-div input {
@@ -124,8 +131,56 @@
     padding: 20px;
 }
 
-@media (max-width:768px) {
+.team {
+    width: 100%;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.team h1 {
+    text-align: center;
+    margin: 25px 0px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td a{
+    color: black;
+    text-decoration: none;
+}
+
+td a:hover{
+    color: white ;
+    text-decoration: none;
+    background-color: black;
+    padding: 5px 0px;
+}
+
+
+@media (max-width: 768px) {
     .container {
         height: 100%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 5px;
     }
 }
